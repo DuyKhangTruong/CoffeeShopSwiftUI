@@ -19,9 +19,13 @@ struct CardBeverageView: View {
                 .clipShape(Circle())
                 .shadow(radius: 5)
             Text(beverageName)
+                .foregroundColor(.black)
+                .bold()
         })
-        .frame(width: 130.0, height: 160.0)
+        
+        .frame(width: 160.0, height: 190.0)
         .background(Color.gray)
+        .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
     }
 }
 

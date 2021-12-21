@@ -37,13 +37,13 @@ struct CardHistoryView: View {
                     }
                     
                 })
-                
-                
             }
             .padding(20)
             .multilineTextAlignment(.center)
         }
-        .frame(width:350, height: 150)
+        //.frame(width:350, height: 150)
+        .frame(minWidth: 0, idealWidth: 350, maxWidth: .infinity, minHeight: 0, idealHeight: 150, maxHeight: .infinity, alignment: .center)
+        .padding(.vertical, 1.0)
     }
 }
 

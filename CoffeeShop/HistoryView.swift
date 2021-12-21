@@ -13,7 +13,8 @@ struct HistoryView: View {
         List(orders) { order in
             CardHistoryView(list: order.beverageList)
         }
-        .frame(alignment: .center)
+        .environment(\.defaultMinListRowHeight, 100)
+        //.frame(alignment: .center)
         
     }
 }
