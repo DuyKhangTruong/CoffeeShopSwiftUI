@@ -11,21 +11,29 @@ struct CardBeverageView: View {
     var imageName: String
     var beverageName: String
     var body: some View {
-        VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10, content: {
-            Image(imageName)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 150, height: 100, alignment: .center)
-                .clipShape(Circle())
-                .shadow(radius: 5)
-            Text(beverageName)
-                .foregroundColor(.black)
-                .bold()
-        })
-        
+        ZStack {
+            RoundedRectangle(cornerRadius: 25, style: .continuous)
+                .fill(Color.white)
+                .shadow(radius: 10)
+            
+            VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10, content: {
+                Image(imageName)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 150, height: 100, alignment: .center)
+                    .clipShape(Circle())
+                    .shadow(radius: 10)
+                Text(beverageName)
+                    .foregroundColor(.black)
+                    .bold()
+            })
+        }
         .frame(width: 160.0, height: 190.0)
-        .background(Color.gray)
-        .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
+       
+        
+//        .frame(width: 160.0, height: 190.0)s
+//        .background(Color.gray)
+//        .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
     }
 }
 
