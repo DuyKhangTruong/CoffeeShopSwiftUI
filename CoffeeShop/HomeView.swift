@@ -44,6 +44,7 @@ struct HomeView: View {
                     .bold()
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 Text("Coffee Shop")
+                    .font(.title2)
                 Image("HomeViewImage")
                     .resizable()
                     .scaledToFit()
@@ -65,7 +66,7 @@ struct HomeView: View {
                         .background(Color.blue)
                         .cornerRadius(9)
                     })
-                    
+                
                 NavigationLink(
                     destination: HistoryView(orders: store.orderList),
                     isActive: $HistoryShown,
@@ -75,6 +76,7 @@ struct HomeView: View {
                         })
                     })
             })
+                .padding(.bottom, 120)
         }
         
         

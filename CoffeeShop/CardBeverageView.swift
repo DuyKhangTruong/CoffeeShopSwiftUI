@@ -29,11 +29,7 @@ struct CardBeverageView: View {
             })
         }
         .frame(width: 160.0, height: 190.0)
-       
         
-//        .frame(width: 160.0, height: 190.0)s
-//        .background(Color.gray)
-//        .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
     }
 }
 

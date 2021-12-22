@@ -15,33 +15,32 @@ struct CardHistoryView: View {
                 .fill(Color.white)
                 .shadow(radius: 10)
             
-        VStack(alignment: .center, spacing: 5, content: {
-            EmptyView().frame(height: 10)
-            Text("Order For \(Date())")
-                .foregroundColor(.black)
-            ForEach(list, id: \.self) { order in
-                HStack(spacing: 15, content: {
-                    Image(order.image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 100, height: 50, alignment: .center)
-                        .clipShape(Circle())
-                        .shadow(radius: 3)
-                    Text("\(order.name): \(order.size)")
-                })
-                    .frame(alignment: .leading)
-                    .padding(15)
-            }
+            VStack(alignment: .center, spacing: 5, content: {
+                Text("Order For")
+                    .foregroundColor(.black)
+                Text(Date(), style: .date)
+                VStack(alignment: .leading, spacing: 10) {
+                    ForEach(list, id: \.self) { order in
+                        HStack(alignment:.center,spacing: 15, content: {
+                            Image(order.image)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 100, height: 50, alignment: .center)
+                                .clipShape(Circle())
+                                .shadow(radius: 5)
+                            Text("\(order.name): \(order.size)")
+                        })
+                            .padding(10)
+                    }
+                }
+                .padding(10)
+                
+            })
+                .padding(20)
+                .multilineTextAlignment(.center)
             
-            EmptyView().frame(height: 10)
-        })
-            .padding(20)
-            .multilineTextAlignment(.center)
+        }
         
-    }
-        //.frame(width:350, height: 150)    
-        //.frame(minWidth: 0, idealWidth: 350, maxWidth: .infinity, minHeight: 0, idealHeight: .infinity, maxHeight: .infinity, alignment: .center)
-        //.padding(.vertical, 1.0)
     }
 }
 
