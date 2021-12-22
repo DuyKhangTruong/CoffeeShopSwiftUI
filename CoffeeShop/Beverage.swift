@@ -15,7 +15,7 @@ class BeverageStore: ObservableObject {
     }
 }
     
-struct Order: Identifiable {
+struct Order: Identifiable,Hashable {
     var id: UUID
     var beverageList: [Beverage]
     var date: Date

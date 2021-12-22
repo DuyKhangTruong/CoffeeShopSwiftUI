@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "74C91576-3946-412A-AE3A-213A4F239C74"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "04EE77B2-C433-4015-B0B6-9F26F89609B2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoffeeShop/Beverage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "BeverageStore"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "04EE77B2-C433-4015-B0B6-9F26F89609B2 - dae5449434584b51"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoffeeShop.BeverageStore.deinit"
+                  moduleName = "CoffeeShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyentruongduykhang/Documents/school_iOS_Job/CoffeeShopSwiftUI/CoffeeShop/Beverage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  uuid = "04EE77B2-C433-4015-B0B6-9F26F89609B2 - 8ea24e41fafbf442"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoffeeShop.BeverageStore.__deallocating_deinit"
+                  moduleName = "CoffeeShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyentruongduykhang/Documents/school_iOS_Job/CoffeeShopSwiftUI/CoffeeShop/Beverage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "04EE77B2-C433-4015-B0B6-9F26F89609B2 - 3d68ecbc62607a84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoffeeShop.BeverageStore.__allocating_init() -&gt; CoffeeShop.BeverageStore"
+                  moduleName = "CoffeeShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyentruongduykhang/Documents/school_iOS_Job/CoffeeShopSwiftUI/CoffeeShop/Beverage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "10">
+               </Location>
+               <Location
+                  uuid = "04EE77B2-C433-4015-B0B6-9F26F89609B2 - b63831fb494f5459"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoffeeShop.BeverageStore.init() -&gt; CoffeeShop.BeverageStore"
+                  moduleName = "CoffeeShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nguyentruongduykhang/Documents/school_iOS_Job/CoffeeShopSwiftUI/CoffeeShop/Beverage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "75">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

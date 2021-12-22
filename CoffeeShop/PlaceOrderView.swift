@@ -13,6 +13,7 @@ struct PlaceOrderView: View {
     @State private var newList = [Beverage]()
     @State var menuShown = false
     @State var submitTapped = false
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         VStack(alignment: .center, spacing: 90, content: {
             VStack(alignment: .center, spacing: 10, content: {
@@ -31,6 +32,7 @@ struct PlaceOrderView: View {
 //                MenuView(newList: $newList)
                 MenuView(newList: $newList, menuShown: $menuShown)
             })
+            
             Button("Submit Order") {
                 submitTapped.toggle()
                 if (!newList.isEmpty) {
@@ -45,7 +47,10 @@ struct PlaceOrderView: View {
             .alert(isPresented: $submitTapped, content: {
                 Alert(title: Text("Order Complete"),
                       message: Text("Thank you for shopping with us."),
-                      dismissButton: .default(Text("OK")))
+                      dismissButton: .default(Text("OK")) {
+                    self.presentationMode.wrappedValue.dismiss()
+                })
+                
             })
             
         })

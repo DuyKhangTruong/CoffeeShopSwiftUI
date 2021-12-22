@@ -11,9 +11,23 @@ struct HistoryView: View {
     let orders: [Order]
     var body: some View {
         List(orders) { order in
-            CardHistoryView(list: order.beverageList)
+            VStack{
+                Spacer()
+                CardHistoryView(list: order.beverageList)
+                Spacer()
+            }
         }
-        .environment(\.defaultMinListRowHeight, 100)
+        .environment(\.defaultMinListRowHeight, 150)
+        
+
+//        List {
+//            VStack {
+//                ForEach(orders, id: \.self) { order in
+//                    CardHistoryView(list: order.beverageList)
+//                }
+//            }
+//        }
+       
         //.frame(alignment: .center)
         
     }
